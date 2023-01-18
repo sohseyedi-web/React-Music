@@ -1,0 +1,10 @@
+.songs {
+  padding: 4.5rem 0 2rem 0;
+
+  @media screen and (max-width: 768px) {
+    flex: 1;
+  }
+  @media screen and (max-width: 550px) {
+    flex: 1;
+  }
+}
