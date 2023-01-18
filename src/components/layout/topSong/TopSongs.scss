@@ -1,0 +1,97 @@
+.top {
+    padding: 1rem 0 5rem 0;
+  
+    &-container {
+  
+      &__title{
+        font-size: 2rem;
+        color: #fff;
+        text-align: center;
+      }
+  
+      &__box {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+  
+        &-item {
+          width: 29%;
+          margin: 1rem 0;
+          border-radius: .5rem;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  
+          img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-top-left-radius: .5rem;
+            border-top-right-radius: .5rem;
+          }
+  
+          &__title {
+            padding: .5rem;
+            color: #fff;
+          }
+  
+          &__action {
+            display: flex;
+            align-items: center;
+            padding: .5rem;
+            justify-content: space-between;
+  
+            button{
+              border: none;
+              background-color: #fff;
+              border-radius: .2rem;
+              color: #16161a;
+              width: 120px;
+            }
+            &-icon{
+  
+  
+              span{
+                color: #fff;
+                margin-left: .5rem;
+                cursor: pointer;
+                transition: color 0.4s ease-in-out;
+  
+  
+                &.fav-icon{
+                  color: #df2020;
+                  transition: color 0.4s ease-in-out;
+                }
+              }
+            }
+          }
+        }
+      }
+  
+  
+      @media screen and (max-width : 768px){
+        &__title{
+          font-size: 1.4rem;
+        }
+        &__box{
+          width: 100%;
+          &-item{
+            width: 48%;
+          }
+        }
+      }
+      @media screen and (max-width : 600px){
+        &__title{
+          font-size: 1.4rem;
+        }
+        &__box{
+          width: 100%;
+          &-item{
+            width: 95%;
+            margin: .8rem auto;
+          }
+        }
+      }
+    }
+  }
