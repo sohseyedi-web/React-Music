@@ -2,8 +2,8 @@ import './MusicPlayer.scss'
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect, useRef, useState} from "react";
 import * as RiIcon from "react-icons/ri";
-import * as FiIcon from "react-icons/Fi";
-import {nextMusic, playMusic, prevMusic, randomMusic} from "../../../redux/reducer/index.js";
+import * as FiIcon from "react-icons/fi";
+import {nextMusic, playMusic, prevMusic, randomMusic} from "../../../redux/reducer/index";
 
 const MusicPlayer = () => {
 

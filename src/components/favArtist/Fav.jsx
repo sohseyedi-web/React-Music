@@ -1,7 +1,7 @@
 import './Fav.scss'
 import Container from "../../container/Container";
 import {useSelector} from "react-redux";
-import Song from "../common/SongCard/Song.jsx";
+import Song from "../common/songCard/Song";
 
 const Fav = () => {
 

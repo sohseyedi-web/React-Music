@@ -1,6 +1,6 @@
 import './Songs.scss'
 import {useEffect} from "react";
-import Song from "../../common/SongCard/Song.jsx";
+import Song from "../../common/songCard/Song";
 import { useSelector} from "react-redux";
 import Container from "../../../container/Container";
 

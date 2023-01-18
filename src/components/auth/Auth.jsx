@@ -13,7 +13,7 @@ const Auth = () => {
               <div className="auth-container__form-icon">
                 <RiIcon.RiUser3Line size={28} />
               </div>
-              <h4 className="auth-container__form-title">ورود / ثبت نام بوم</h4>
+              <h4 className="auth-container__form-title">ورود / ثبت نام </h4>
               <div className="auth-container__form-items">
               <span
                   onClick={() => setShow(!show)}
