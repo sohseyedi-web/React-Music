@@ -1,18 +1,15 @@
 import './MusicPlayer.scss'
-import { useSelector} from "react-redux";
-import {useEffect, useRef, useState} from "react";
+import {useSelector} from "react-redux";
+import { useState} from "react";
 
 import Control from "./control/Control";
 
 const MusicPlayer = () => {
 
     const {song} = useSelector((state) => state.music);
-    const ref = useRef(null)
     const [volume, setVolume] = useState("0.5");
 
-    useEffect(() => {
-        ref.current.volume = volume
-    },[volume])
+
 
 
     return (
