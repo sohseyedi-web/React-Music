@@ -1,12 +1,10 @@
 import * as RiIcon from "react-icons/ri";
 import "./Auth.scss";
-import Container from "../../container/Container";
 import { useState } from "react";
 const Auth = () => {
   const [show, setShow] = useState(false);
 
   return (
-      <Container>
         <section className="auth">
           <div className="auth-container container ">
             <div className="auth-container__form">
@@ -63,7 +61,6 @@ const Auth = () => {
           </div>
 
         </section>
-      </Container>
   );
 };
 

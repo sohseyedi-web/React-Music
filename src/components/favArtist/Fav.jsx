@@ -1,5 +1,4 @@
 import './Fav.scss'
-import Container from "../../container/Container";
 import {useSelector} from "react-redux";
 import Song from "../common/songCard/Song";
 
@@ -10,7 +9,6 @@ const Fav = () => {
 
 
   return (
-      <Container>
         <div className="fav container">
           {
             filterFavItem.length === 0 ?
@@ -22,7 +20,6 @@ const Fav = () => {
                 )
           }
         </div>
-      </Container>
   )
 }
 
