@@ -1,4 +1,4 @@
-import React, {useState , useRef} from 'react';
+import React, {useState, useRef} from 'react';
 import {nextMusic, playMusic, prevMusic, randomMusic} from "../../../../redux/reducer/index";
 import * as FiIcon from "react-icons/fi";
 import * as RiIcon from "react-icons/ri";
@@ -9,6 +9,7 @@ const Control = ({song}) => {
     const [duration, setDuration] = useState(0);
     const [seekTime, setSeekTime] = useState(0);
     const [appTime, setAppTime] = useState(0);
+
     const getTime = (time) => `${Math.floor(time / 60)}:${(`0${Math.floor(time % 60)}`).slice(-2)}`;
 
 
@@ -43,16 +44,16 @@ const Control = ({song}) => {
                 <span>
                   <FiIcon.FiRepeat/>
                 </span>
-                <button type="button" onClick={() => setSeekTime(appTime + 5)}
-                >
-                    +
-                </button>
+
             </div>
 
             <div className="footer-content__center__line">
-                <input onInput={(e) => setSeekTime(e.target.value)} type="range" step="any"
-                       value={appTime} min={"0"} max={duration}
+                <input onInput={(e) => {
+                    setSeekTime(e.target.value);
+                }} type="range" step="any"
+                       value={appTime} min="0" max={duration}
                 />
+                <p className="text-white">{duration === 0 ? '0:00' : getTime(duration)}</p>
             </div>
             <div className="footer-content__center__audio">
                 <audio src={song.music} ref={ref} onEnded={() => dispatch(nextMusic(song))}

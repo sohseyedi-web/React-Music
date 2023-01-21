@@ -39,6 +39,7 @@ const Artists = () => {
                                 className="slider-box__items-image"
                             >
                                 <img src={item.profile} alt={item.name}/>
+
                             </SwiperSlide>
                         ))
                     }

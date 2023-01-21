@@ -10,7 +10,7 @@
   transition: right 0.4s ease-in-out;
 
   &.sidebar-active {
-    right: 0%;
+    right: 0;
     transition: right 0.4s ease-in-out;
   }
 
@@ -40,7 +40,6 @@
       border-radius: 50%;
       cursor: pointer;
       position: absolute;
-      content: "";
       top: 1.5rem;
       left: -0.9rem;
       width: 32px;
