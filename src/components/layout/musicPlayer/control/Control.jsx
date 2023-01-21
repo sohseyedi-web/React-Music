@@ -53,7 +53,6 @@ const Control = ({song}) => {
                 }} type="range" step="any"
                        value={appTime} min="0" max={duration}
                 />
-                <p className="text-white">{duration === 0 ? '0:00' : getTime(duration)}</p>
             </div>
             <div className="footer-content__center__audio">
                 <audio src={song.music} ref={ref} onEnded={() => dispatch(nextMusic(song))}
